@@ -6,7 +6,7 @@
 #define V 4
 #define INF 99999
 
-static void printSolution(int matrix[][V]) {
+void printSolution(int matrix[][V]) {
     printf("Shortest distances between every pair of vertices:\n");
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
@@ -18,8 +18,7 @@ static void printSolution(int matrix[][V]) {
         printf("\n");
     }
 }
-
-static void floydWarshall(int graph[][V]) {
+void floydWarshall(int graph[][V]) {
     int matrix[V][V];
 
     for (int i = 0; i < V; i++)
